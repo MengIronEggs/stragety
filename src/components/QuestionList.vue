@@ -61,7 +61,7 @@ export default {
       let phone = localStorage.getItem("strategy_tel");
       // let geturl = "http://ntest.guoanfamily.com/examiner/question?phone=" + phone;
       // let geturl = "http://192.168.1.105:8280/question/0";
-      let geturl = "http://mt.guoanfamily.com/examiner/question/0";
+      let geturl = "https://mt.guoanfamily.com/examiner/question/0";
       this.$http.get(geturl).then(
         response => {
           if (response.status == 200) {
@@ -255,7 +255,7 @@ export default {
         company: this.company.toString()
       };
       // alert(JSON.stringify(post_data));
-      let posturl = "http://mt.guoanfamily.com/examiner/submit";
+      let posturl = "https://mt.guoanfamily.com/examiner/submit";
       // let posturl = "http://192.168.1.124:8280/submit";
 
       this.$http.post(posturl, post_data).then(

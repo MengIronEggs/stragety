@@ -59,7 +59,7 @@ export default {
     // },
     // 获取时间接口方法
     timeListonLoad() {
-      let geturl = "http://mt.guoanfamily.com/examiner/gettimerange";
+      let geturl = "https://mt.guoanfamily.com/examiner/gettimerange";
       this.$http.get(geturl).then(
         response => {
           if (response.status == 200) {
@@ -81,7 +81,7 @@ export default {
     // 时间筛选的点击值变化事件
     onChange(value){
         // console.log(value);
-        let fiLterUrl = "http://mt.guoanfamily.com/examiner/statistics?time=" + this.answerTime;
+        let fiLterUrl = "https://mt.guoanfamily.com/examiner/statistics?time=" + this.answerTime;
         this.$http.get(fiLterUrl).then(
         response => {
           if (response.status == 200) {

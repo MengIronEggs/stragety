@@ -93,7 +93,7 @@ export default {
         return false;
       }
       let geturl =
-        "http://mt.guoanfamily.com/examiner/question?phone=" + this.tel;
+        "https://mt.guoanfamily.com/examiner/question?phone=" + this.tel;
       this.$http.get(geturl).then(
         response => {
           // console.log(response);
